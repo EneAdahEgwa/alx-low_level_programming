@@ -1,7 +1,8 @@
-#include "main.h"                                                        
+#include "main.h"
 #include <stdio.h>
-/** 
-*main - finds and prints the first 98 Fibonacci numbers*starting with 1 and 2*followed by a new line
+/**
+*main - finds and prints the first 98 Fibonacci numbers*starting with 1 and 2
+*followed by a new line
 *Return: ALways 0 (Success)
 */
 int main(void)
@@ -9,7 +10,7 @@ int main(void)
 unsigned long int a, b, c, b1, b2, c1, c2;
 b = 1;
 c = 2;
-printf("%lu", b); 
+printf("%lu", b);
 for (a = 1; a < 91; a++)
 {
 printf(", %lu", c);

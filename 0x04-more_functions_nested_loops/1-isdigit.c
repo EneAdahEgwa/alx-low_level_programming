@@ -1,8 +1,9 @@
 #include "main.h"
+#include <stdio.h>
 /**
  *_isdigit - a funtion that checks for digit 0-9
  *@c: input
- *Return: 1 if c is a digit, 0 otherwise
+ *Return: 1 if c is a digit
 */
 int _isdigit(int c)
 {

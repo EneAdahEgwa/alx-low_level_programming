@@ -6,9 +6,9 @@
 */
 int _atoi(char *s)
 {
-int i;
+int d, i;
 i = 1;
-int d = 0;
+d = 0;
 do {
 if (*s == '-')
 i *= -1;

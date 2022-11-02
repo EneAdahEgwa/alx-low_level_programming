@@ -13,7 +13,7 @@ if (i == j)
 return (1);
 }
 else if (j % i == 0 || j <= 1)
-}
+{
 return (0);
 }
 else

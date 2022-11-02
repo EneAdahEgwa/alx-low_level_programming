@@ -1,30 +1,28 @@
 #include "main.h"
 /**
- *square_root - find the natural square roo
- *@i: number
- *@j: incrementor
- *Return: the number found
+ *helper - helperfunction to find sqrt
+ *@num: num to be square rooted
+ *@guess: guess number
+ *Return: squareroot of number
 */
-int square_root(int i, int j)
+int helper(int num, int guess)
 {
-if (i * i == j)
-{
-return (i);
-}
-else if (i * i > j)
-{
+if (guess * guess == num)
+return (guess);
+if (guess * guess > num)
 return (-1);
-}
 else
-{
-return (square_root(i + 1, j));
+return (helper(num, guess + 1));
 }
 /**
- *_sqrt_recursion - returns the natural square root of a number                              *@n: number
- *Return: the natural square root found
+ *_sqrt_recursion - returns natural square root of a number
+ *@n: number to be square rooted
+ *Return: squareroot of n
 */
 int _sqrt_recursion(int n)
 {
-int a = 1;
-return (square_root(a, n));
+if (n < 0)
+return (-1);
+else
+return (helper(n, 0));
 }

@@ -12,7 +12,7 @@ int a, b, c;
 int **p;
 if (width < 1 || height < 1)
 return (NULL);
-p = malloc (sizeof(int *) * height);
+p = malloc(sizeof(int *) * height);
 if (p == NULL)
 {
 free(p);
@@ -20,7 +20,7 @@ return (NULL);
 }
 for (a = 0; a < height; a++)
 {
-p[a] = malloc (sizeof(int) * width);
+p[a] = malloc(sizeof(int) * width);
 if (p[a] == NULL)
 {
 for (; a >= 0 ; a--)
@@ -33,7 +33,7 @@ return (NULL);
 }
 for (b = 0; b < height; b++)
 {
-for(c = 0; c < width; c++)
+for (c = 0; c < width; c++)
 {
 p[b][c] = 0;
 }

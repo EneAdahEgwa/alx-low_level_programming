@@ -1,21 +1,11 @@
-#include "holberton.h"
-
+#include "main.h"
 #include <stdlib.h>
-
-
-
 /**
- *
- *  * alloc_grid - returns a pointer to a 2-dimensioanl array of intergers
- *
- *   * @width: width of the grid
- *
- *    * @height: height of the grid
- *
- *     * Return: NULL on failure if width or height is 0 || -1 return NULL
- *
- *      */
-
+ *alloc_grid - returns a pointer to a 2-dimensioanl array of intergers
+ *@width: width of the grid
+ *@height: height of the grid
+ *Return: NULL on failure if width or height is 0 || -1 return NULL
+*/
 int **alloc_grid(int width, int height)
 {
 int a, b, c;

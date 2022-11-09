@@ -8,20 +8,34 @@
 */
 char *str_concat(char *s1, char *s2)
 {
-char *concat_str;
-int index, concat_index = 0, len = 0;
-if (s2 == NULL)
+int length;
+char *space;
+if (s1 == '\0')
+{
 s1 = "";
-if (s2 == NULL)
+}
+if (s2 == '\0')
+{
 s2 = "";
-for (index = 0; s1[index] || s2[index]; index++)
-len++;
-concat_str = malloc(sizeof(char) * len);
-if (concat_str == NULL)
-return (NULL);
-for (index = 0; s1[index]; index++)
-concat_str[concat_index++] = s1[index];
-for (index = 0; s2[index]; index++)
-concat_str[concat_index++] = s2[index];
-return (concat_str);
+}
+length = _strlen(s1) + _strlen(s2);
+if (s1 != '\0' && s2 != '\0')
+{
+space = malloc(sizeof(char) * length + 1);
+if (space == '\0')
+{
+return ('\0');
+}
+else
+{
+space = _strcat(space, s1);
+space = _strcat(space, s2);
+}
+}
+else
+{
+space = "";
+}
+return (space);
+free(space);
 }

@@ -17,7 +17,7 @@ else
 {
 for (; str[a] != ' ' && str[a] != '\0'; a++)
 str++;
-num++
+num++;
 }
 }
 return (num);

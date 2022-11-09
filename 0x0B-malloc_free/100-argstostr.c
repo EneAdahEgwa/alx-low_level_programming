@@ -26,7 +26,7 @@ count++;
 k = 0;
 }
 count++;
-ptr = malloc(count * sizeof(char));
+ptr = malloc(count *sizeof(char));
 if (ptr == NULL)
 return (NULL);
 for (i = 0; i < ac; i++)

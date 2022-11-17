@@ -8,7 +8,8 @@
 */
 int main(int argc, char *argv[])
 {
-int n_bytes, i;char *arr_code;
+int n_bytes, i;
+char *arr_code;
 if (argc != 2)
 {
 printf("Error\n");

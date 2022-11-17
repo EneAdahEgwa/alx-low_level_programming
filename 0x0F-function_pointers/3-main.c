@@ -1,6 +1,5 @@
 #include "3-calc.h"
 /**
- *
  *main - the starting function
  *@argc: the number of passed arguments including the program's name
  *@argv: an array whose elements are the passed arguments
@@ -22,11 +21,13 @@ o = *argv[2];
 op_func = get_op_func(argv[2]);
 if (!op_func)
 {
-printf("Error\n");return (99);
+printf("Error\n");
+return (99);
 }
 if ((o == '/' || o == '%') && y == 0)
 {
-printf("Error\n");return (100);
+printf("Error\n");
+return (100);
 }
 printf("%d\n", op_func(x, y));
 return (0);
